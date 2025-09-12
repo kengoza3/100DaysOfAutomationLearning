@@ -5,10 +5,16 @@ import * as path from 'path';
 // Load environment variables from parent directory .env file
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
-// load env variables
-const username = process.env.SERVICENOW_USERNAME;
-const password = process.env.SERVICENOW_PASSWORD;
-const base_url = process.env.SERVICENOW_BASE_URL;
+// beforeEach hook to load env variables
+let username: string;
+let password: string;
+let base_url: string;
+
+test.beforeEach(() => {
+  username = process.env.SERVICENOW_USERNAME || '';
+  password = process.env.SERVICENOW_PASSWORD || '';
+  base_url = process.env.SERVICENOW_BASE_URL || '';
+});
 
 test('is servicenow page', async ({ page }) => {
   
