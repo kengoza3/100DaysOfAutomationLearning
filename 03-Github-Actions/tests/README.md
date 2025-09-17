@@ -1,0 +1,2 @@
+# What I learned
+- using the npm init playwright@latest command to instantiate the Github Actions yaml file makes this process much easier. hardly any reconfiguration required besides setting workflow paths (due to how I structured my project)
