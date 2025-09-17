@@ -23,6 +23,29 @@ npx playwright install
 npx playwright codegen https://example.com
 ```
 
+### When to use `npm init playwright@latest` vs `npm install -D @playwright/test`
+
+- `npm init playwright@latest` — Use this when you're starting a new project or you want Playwright to scaffold recommended files and configuration for you. The init wizard will:
+	- create or update `package.json` (if needed),
+	- add `@playwright/test` as a dev dependency,
+	- optionally create example tests and a `playwright.config.ts`/`js` file,
+	- offer to install browsers for you.
+	This is the quickest way to get a runnable Playwright test project with sensible defaults.
+
+- `npm install -D @playwright/test` — Use this when you already have an existing project and just want to add the Playwright Test runner as a dev dependency without scaffolding. After installing the package you should run:
+
+```powershell
+npx playwright install
+```
+
+to download the browser binaries. This approach keeps your repository layout and config choices intact and simply adds the test tooling.
+
+Quick decision guide:
+
+- New project or want scaffolded examples/config: `npm init playwright@latest`
+- Existing project and you only want the test runner: `npm install -D @playwright/test` + `npx playwright install`
+
+
 ## Minimal test example
 
 JavaScript / TypeScript using Playwright Test:
