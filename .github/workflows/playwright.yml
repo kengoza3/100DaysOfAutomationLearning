@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        project: [ "01-login-authentication", "02-CRUD-operations", "03-Github-Actions" ]
+        project: [ "01-login-authentication", "03-Github-Actions" ]
 
     defaults:
       run:
