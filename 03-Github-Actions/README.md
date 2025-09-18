@@ -84,4 +84,4 @@ This CI/CD setup demonstrates enterprise-level automation practices that consult
 
 ---
 
-*This project showcases practical DevOps integration skills essential for modern QE consulting services. Follow my learning journey at [#100DaysOfAutomationLearning](https://linkedin.com/in/yourprofile)*
+*This project showcases practical DevOps integration skills essential for modern QE consulting services. Follow my learning journey at [#100DaysOfAutomationLearning](https://linkedin.com/in/kenneth-gonzalez-50ba4a176)*
